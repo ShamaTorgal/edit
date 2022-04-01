@@ -17,15 +17,10 @@
          1.2 Low Level Requirements
     3. 5W's and 1H
     4. SWOT Analysis
-    5. Structural Design
+    5. Architecture
           5.1 Behavioural Diagram - Flow Chart 
           5.2 Structural Diagram - High Level Diagram
-    9. Implementation
-         8.1 Instructions to execute
-         8.2 File Details 
-    10. Test Plan
-         9.1   Table 1 - High level test plan
-	     9.2   Table 2 - low level test plan
+        
 # Smart Switch Box 
 ## 1. Introduction
 

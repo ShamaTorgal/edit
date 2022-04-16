@@ -1,5 +1,4 @@
 # ILSWTTI101-Mar-Team27
-
 ## Team Details
 
 |Sl. No	| Name | PS number | Track | Business Unit | Email | Photo|
@@ -20,6 +19,14 @@
     5. Architecture
           5.1 Behavioural Diagram - Flow Chart 
           5.2 Structural Diagram - High Level Diagram
+    6. Test Plan and Output
+          6.1 High Level Test plan
+          6.2 Low level Test Plan
+    7. Output
+          7.1 Instructions to execute
+          7.2 Output and Program execution
+          7.3 Output of Gtest
+        
         
 # Smart Switch Box 
 ## 1. Introduction
@@ -76,6 +83,55 @@ below is an image to illustrate the smart switch functionality.
 
 
 ![High Level Diagram](https://user-images.githubusercontent.com/98867688/160238964-21e42fe7-4d18-4eaf-86be-dea8e969016b.png)
+
+## 6. Test Plan and Output
+
+### 6.1 High Level Test plan 
+
+| Test Id | Description | Input |Expected Output | Actual Output | Status |
+| --- | --- | --- | --- | --- | --- |
+| HLT_01 | Power status | Available 1 & 0 to turn power ON & OFF status | Available: 1 & 0 to turn power ON & OFF | Available: 1 & 0 to turn power ON & OFF |:heavy_check_mark:|
+| HLT_02 | Fan | Available 1 & 0 to turn power ON & OFF status | Select Fan | Select Fan | :heavy_check_mark: |
+| HLT_03 | Fridge |  Available 1 & 0 to turn power ON & OFF status | Select Fridge | Select Fridge | :heavy_check_mark: |
+| HLT_04 | Light Bulb | Available 1 & 0 to turn power ON & OFF status | Select Light Bulb | Select Light Bulb | :heavy_check_mark: |
+
+### 6.2 Low level Test Plan 
+
+* LOW LEVEL TEST PLAN FOR HLTP1
+
+| Test Id | Description | Input |Expected Output | Actual Output | Status |
+| --- | --- | --- | --- | --- | --- |
+| LLT_01 | Display the power status | Available: 1 => ON 0 => OFF | turn 1 to power ON & turn 0 to power OFF | turn 1 to power ON & turn 0 to power OFF | :heavy_check_mark: |
+| LLT_02 | It control ON & OFF status of fan | Available: 1 => ON 0 => OFF | turn 1 to power ON & turn 0 to power OFF |  turn 1 to power ON & turn 0 to power OFF | :heavy_check_mark: |
+| LLT_03 | It control ON & OFF status of fridge | Available: 1 => ON 0 => OFF | turn 1 to power ON & turn 0 to power OFF | turn 1 to power ON & turn 0 to power OFF | :heavy_check_mark: |
+| LLT_04 | It control ON & OFF status of light bulb | Available: 1 => ON 0 => OFF | turn 1 to power ON & turn 0 to power OFF | turn 1 to power ON & turn 0 to power OFF | :heavy_check_mark: |
+
+* LOW LEVEL TEST PLAN FOR HLTP2
+
+| Test Id | Description | Input |Expected Output | Actual Output | Status |
+| --- | --- | --- | --- | --- | --- |
+| LLT_05 | regulate the speed of the fan | regulate range between(0-5) | It showing speed of the fan according to range | It showing speed of the fan according to range | :heavy_check_mark: |
+| LLT_06 | regulate the temperature of the fridge | regulate range between(0-100) | It showing temperature of the fridge according to range |  It showing temperature of the fridge according to range | :heavy_check_mark: |
+| LLT_07 | regulate the intensity of the light bulb | regulate range between(0-2) | It showing intensity of the light bulb according to range |  It showing intensity of the light bulb according to range | :heavy_check_mark: |
+
+
+## 7. Output
+### 7.1 Instructions to execute :
+
+* Clone the repository
+* Go to 3_Implementation folder (change directory to 3_Implementation folder using wsl terminal)
+* Make sure your system meets all software and hardware requirements
+* Run "make" command in terminal for main code execution
+* Run "make run" command in terminal for main code execution
+* Run "make runtest" command in terminal for Gtest.
+
+### 7.2 Output and Program execution :
+
+![Procedure to run](https://user-images.githubusercontent.com/98867688/163672753-7f64ec0c-179b-4f28-893b-ff69fce1865e.png)
+
+### 7.3 Output of Gtest :
+
+![Gtest output](https://user-images.githubusercontent.com/98867688/163672759-3f9fce6e-961b-4098-a075-b254869bd322.png)
 
 
 
